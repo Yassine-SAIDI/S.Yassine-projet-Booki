@@ -567,3 +567,69 @@ form input[type="submit"]:hover {
 .lettre:nth-child(7) {
    animation-delay: .7s;
 }
+
+
+
+
+/* Tablet  */
+
+@media screen and (max-width: 992px){
+   #content {
+      max-width: 100%;       
+      width: 100%;
+      margin: 0;
+      padding: 44px 72px 0;
+  }
+  form{
+   width: 46%;
+  }
+  .bannier-filtres ul {
+   gap: 15px;
+}
+  
+  main {
+   gap: 53px;
+}
+#hebergements {
+   width: 100%;
+   
+}
+#populaire-content {
+   width: 100%;
+}
+#most-visited {
+   flex-direction: row;
+   gap: 23px;
+}
+#most-visited article img {
+   width: 106px;
+   margin-right: 10px;
+}
+#most-visited article{
+   width: 100%;
+}
+#most-visited article h3{
+   font-size: 14px;
+   padding: 12px 25px 7px 0;
+}
+#most-visited article div:nth-last-child(1){
+   margin: 0;
+   margin-bottom: 12px;
+}
+#most-visited article p{
+   font-size: 13px;
+}
+.marseille {
+   gap: 50px;
+}
+.marseille article img {
+   height: 211px;
+}
+#activites h2{
+   margin-left: 15px;
+}
+footer {
+   gap: 82px;
+}
+
+}
