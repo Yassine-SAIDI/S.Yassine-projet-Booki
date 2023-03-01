@@ -64,6 +64,7 @@ footer {
    margin-top: 60px;
    gap: 235px;
 }
+
 article {
    transition: all .3s;
 }
@@ -112,7 +113,7 @@ article {
 }
 
 #activites {
-   animation: section-3 3s  2s forwards;
+   animation: section-3 3s 2s forwards;
    right: 200%;
    position: relative;
 }
@@ -146,7 +147,8 @@ article {
 .fa-solid {
    color: #0065FC;
 }
-.align-vert{
+
+.align-vert {
    display: flex;
 }
 
@@ -164,7 +166,7 @@ article {
    margin-right: 60px;
 }
 
-.bannier-header ul a{
+.bannier-header ul a {
    transition: all .4s;
 }
 
@@ -341,11 +343,13 @@ div i:nth-last-child(1) {
    object-fit: cover;
    margin-right: 15px;
 }
-#most-visited article div:nth-last-child(1){
- margin: 16px 22px 12px 0;
-    position: relative;
+
+#most-visited article div:nth-last-child(1) {
+   margin: 16px 22px 12px 0;
+   position: relative;
 }
-#most-visited article div div:nth-last-child(1){
+
+#most-visited article div div:nth-last-child(1) {
    position: absolute;
    bottom: 0;
 }
@@ -386,6 +390,7 @@ div i:nth-last-child(1) {
 }
 
 
+
 /* footer */
 footer div {
    display: flex;
@@ -401,4 +406,164 @@ footer a {
    padding-bottom: 12px;
    transition: all .3s;
 
+}
+
+
+/* les animations */
+
+footer a:hover {
+   transform: translateX(10px);
+}
+
+#content article:hover {
+   transform: scale(1.1);
+   box-shadow: 0px 6px 23px 13px rgba(0, 0, 0, 0.5);
+}
+
+#hebergements h2:nth-last-child(1):hover {
+   transform: translateY(10px);
+   font-size: 22px;
+   opacity: .6;
+}
+
+.bannier-header ul a:hover {
+   border-top: 3px #0065FC solid;
+   padding: 40px 30px 0;
+   color: #0065FC;
+   font-weight: 500;
+   transform: scale(1.5);
+}
+
+form input[type="submit"]:hover {
+   border-radius: 0 15px 15px 0;
+   color: #0065FC;
+   border: #0065FC 3px solid;
+   font-weight: 700;
+   background: #fff;
+   opacity: .7;
+   transform: scale(1.05);
+}
+
+.bannier-filtres li:hover {
+   background: #DEEBFF;
+   transform: translateY(8px);
+}
+
+@keyframes section-1 {
+   0% {
+      right: 90%;
+   }
+
+   50% {
+      opacity: .5;
+      right: 0;
+   }
+
+   100% {
+      opacity: 1;
+      right: 0;
+   }
+}
+
+@keyframes section-2 {
+   0% {
+      left: 90%;
+   }
+
+   50% {
+      opacity: .7;
+      left: 0;
+   }
+
+   100% {
+      opacity: 1;
+      left: 0;
+   }
+}
+
+@keyframes section-3 {
+   0% {
+      right: 200%;
+   }
+
+   50% {
+      opacity: .5;
+      right: 0;
+   }
+
+   100% {
+      opacity: 1;
+      right: 0;
+   }
+}
+
+.loader {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   animation: loading 10s forwards;
+   z-index: 1000;
+}
+
+@keyframes loading {
+   100% {
+      top: -100%;
+   }
+
+}
+
+.lettre {
+   color: #0065FC;
+   font-size: 80px;
+   letter-spacing: 15px;
+   margin-bottom: 150px;
+   animation: flash 1s linear infinite;
+}
+
+@keyframes flash {
+   0% {
+      color: #0065FC;
+      text-shadow: 0 0 7px #fff;
+   }
+
+   90% {
+      color: #fff;
+      text-shadow: none;
+   }
+
+   100% {
+      color: #0065FC;
+      text-shadow: 0 0 7px #fff;
+   }
+}
+
+.lettre:nth-child(1) {
+   animation-delay: .1s;
+}
+
+.lettre:nth-child(2) {
+   animation-delay: .2s;
+}
+
+.lettre:nth-child(3) {
+   animation-delay: .3s;
+}
+
+.lettre:nth-child(4) {
+   animation-delay: .4s;
+}
+
+.lettre:nth-child(5) {
+   animation-delay: .5s;
+}
+
+.lettre:nth-child(6) {
+   animation-delay: .6s;
+}
+
+.lettre:nth-child(7) {
+   animation-delay: .7s;
 }
