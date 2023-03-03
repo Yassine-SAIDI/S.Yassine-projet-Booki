@@ -757,7 +757,8 @@ form input[type="submit"]:hover {
    }
 
    #most-visited article img {
-      width: 134px;
+      width: 300px;
+      height: 200px;
    }
 
    #most-visited article h3 {
@@ -779,6 +780,9 @@ form input[type="submit"]:hover {
 
    #hebergements h2:nth-last-child(1) {
       display: none;
+   }
+   #articles-hebergement article img{
+      height: 300px;
    }
 
    .marseille {
